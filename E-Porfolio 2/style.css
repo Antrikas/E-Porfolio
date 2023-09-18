@@ -201,6 +201,15 @@ max-width: 100%;
     transform: all 300ms;
 }
 
+.container{
+    display: flex;
+flex-direction: column;
+align-items: center;
+max-width: 600px;
+margin: 0 auto;
+text-align: center;
+}
+
 .language:hover .language__image {
 filter: brightness(85%);
 opacity: 0.86;
