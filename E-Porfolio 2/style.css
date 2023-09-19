@@ -339,9 +339,6 @@ footer {
     background-color: #242424;
 }
 
-.footer__logo{
-    margin-bottom: 20px;
-}
 
 .footer__social--list{
 width: 100%;
@@ -364,6 +361,27 @@ height: 70px;
 }
 
 .footer__social--link,
-.footer__copyright {
+.footer__copyright,
+.footer__logo--popper {
     color:#fff
+}
+
+.footer__logo--popper {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    font-weight: 700;
+    opacity: 0;
+    transition: all 300ms ease;
+}
+
+.footer__anchor {
+    margin-bottom: 20px;
+    position: relative;
+
+}
+
+.footer__anchor:hover .footer__logo--popper{
+    transform: translateY(60px);
+    opacity: 1;
 }
